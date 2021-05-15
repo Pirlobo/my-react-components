@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Carousel from './components/Carousel/Carousel';
 function App() {
+  let imageList = [ 
+  'https://www.musicnotes.com/images2/promos/store/900x520_piano-min.jpg',
+  'https://www.musicnotes.com/images2/promos/store/900x520_piano_newage-min.jpg', 
+  'https://www.musicnotes.com/images2/promos/store/900x520_piano_country-min.jpg',
+  'https://www.musicnotes.com/images2/promos/store/900x520_piano_christian-min.jpg',
+]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Carousel imageList= {imageList}></Carousel>
   );
 }
 
