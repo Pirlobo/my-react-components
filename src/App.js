@@ -10,7 +10,7 @@ function App() {
 ]
   return (
     <Carousel imageList= {imageList}></Carousel>
-    // <DropDown></DropDown>
+    {/* <DropDown></DropDown> */}
   );
 }
 
