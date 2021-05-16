@@ -7,19 +7,21 @@ const DropDown = (props) => {
     options: props.options,
   };
   return (
-    <div className="dropdown">
-      <button className="dropbtn">
-        {defaultProps.title}
-        <i className="fa fa-caret-down"></i>
-      </button>
-      <div className="dropdown-content">
-        {defaultProps.options.map((option, index) => {
-          return (
-            <a key={index} href={option.href}>
-              {option.opt}
-            </a>
-          );
-        })}
+    <div className="dropdown-container">
+      <div className="dropdown">
+        <button className="dropbtn">
+          {defaultProps.title}
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div className="dropdown-content">
+          {defaultProps.options.map((option, index) => {
+            return (
+              <a key={index} href={option.href}>
+                {option.opt}
+              </a>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

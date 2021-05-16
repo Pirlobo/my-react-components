@@ -36,6 +36,9 @@
   .dropdown-content a:hover {
     background-color: #ddd;
   }
+  .dropdown-container {
+    max-width: fit-content;
+  }
   .dropdown:hover .dropdown-content {
     display: block;
   }
