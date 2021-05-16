@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "./Image";
 import "./carousel.css";
+import PropTypes from 'prop-types'
 import useCarousel from "../../hooks/useCarousel";
 const Carousel = (props) => {
-  const { counter, setCounter, handleNextBtn, handlePreviousBtn } =
-    useCarousel(props);
+  const { counter, setCounter, handleNextBtn, handlePreviousBtn } = useCarousel(props);
   const images = props.imageList;
   const convertIntoImageObject = (imageArray) => {
     let imageObjects = [];
@@ -27,12 +27,14 @@ const Carousel = (props) => {
       ></i>
       <i
         onClick={handleNextBtn}
-        class="fas fa-angle-double-right icon-right "
+        className="fas fa-angle-double-right icon-right "
         id="nextBtn"
       ></i>
       <Image renderedImage={renderedImage} counter={counter}></Image>
     </div>
   );
 };
-
+Carousel.propTypes = {
+  imageList : PropTypes.arrayOf(PropTypes.string)
+}
 export default Carousel;

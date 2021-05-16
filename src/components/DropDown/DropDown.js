@@ -1,21 +1,27 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './dropDown.css'
-function DropDown(props) {
-  let title = props.title
-  let options = props.options
-
+import PropTypes from 'prop-types';
+const DropDown = (props) => {
+  let defaultProps = {
+    title : props.title,
+    options : props.options
+  }
     return (
-      <div class="dropdown">
-      <button class="dropbtn">{title} 
-        <i class="fa fa-caret-down"></i>
+      <div className="dropdown">
+      <button className="dropbtn">{defaultProps.title} 
+        <i className="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-content">
-      {options.map((option, index) => {
+      <div className="dropdown-content">
+      {defaultProps.options.map((option, index) => {
           return <a key = {index} href={option.href}>{option.opt}</a>
         })}
       </div>
     </div> 
     )
 }
+DropDown.propTypes = {
+  title: PropTypes.string,
+  options : PropTypes.array
+};
 
 export default DropDown

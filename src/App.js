@@ -1,24 +1,18 @@
 import './App.css';
 import DropDown from './components/DropDown/DropDown';
 import Carousel from './components/Carousel/Carousel';
+import { imageList } from './props/CarouselProps';
+import { Title, Options } from './props/DropDownProps';
 function App() {
 
   // Carousel's props
-  let imageList = [ 
-  'https://www.musicnotes.com/images2/promos/store/900x520_piano-min.jpg',
-  'https://www.musicnotes.com/images2/promos/store/900x520_piano_newage-min.jpg', 
-  'https://www.musicnotes.com/images2/promos/store/900x520_piano_country-min.jpg',
-  'https://www.musicnotes.com/images2/promos/store/900x520_piano_christian-min.jpg',
-]
+  let images = imageList;
 
 // DropDown's props
-let title = "Rao Vặt"
-let options = [
-  {href : "#", opt :  "Đăng việc làm"},
-  {href : "#", opt :  "Đăng bài bán nhà"},
-]
+let title = Title
+let options = Options;
   return (
-    // <Carousel imageList= {imageList}></Carousel>
+    // <Carousel imageList= {images}></Carousel>
     <DropDown title = {title} options = {options}></DropDown>
   );
 }
