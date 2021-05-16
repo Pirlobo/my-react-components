@@ -1,4 +1,5 @@
 import './App.css';
+import DropDown from './components/DropDown/DropDown';
 import Carousel from './components/Carousel/Carousel';
 function App() {
   let imageList = [ 
@@ -9,6 +10,7 @@ function App() {
 ]
   return (
     <Carousel imageList= {imageList}></Carousel>
+    // <DropDown></DropDown>
   );
 }
 

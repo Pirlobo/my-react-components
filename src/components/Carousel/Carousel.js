@@ -20,7 +20,7 @@ const Carousel = (props) => {
   }, [counter]);
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-content">
       <i
         onClick={handlePreviousBtn}
         className="fas fa-angle-double-left icon-left "
