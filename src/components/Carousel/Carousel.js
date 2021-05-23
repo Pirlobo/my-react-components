@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "./Image";
-import "./carousel.css";
+import "./carousel.scss";
 import PropTypes from 'prop-types'
 import useCarousel from "../../hooks/useCarousel";
 const Carousel = (props) => {
@@ -20,7 +20,8 @@ const Carousel = (props) => {
   }, [counter]);
 
   return (
-    <div className="carousel-content">
+    <div className="carousel-container">
+       <div className="carousel-content">
       <i
         onClick={handlePreviousBtn}
         className="fas fa-angle-double-left icon-left "
@@ -32,6 +33,8 @@ const Carousel = (props) => {
       ></i>
       <Image renderedImage={renderedImage} counter={counter}></Image>
     </div>
+    </div>
+   
   );
 };
 Carousel.propTypes = {

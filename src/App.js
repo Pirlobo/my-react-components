@@ -12,7 +12,7 @@ function App() {
   let options = Options;
   
   return (
-    // <Carousel imageList= {images}></Carousel>
+    //  <Carousel imageList= {images}></Carousel>
     <DropDown title={title} options={options}></DropDown>
   );
 }

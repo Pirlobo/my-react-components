@@ -1,49 +1,82 @@
-
-.transition{
-    opacity: 0.5;
-    transition-duration: 1s;
-   
+.transition {
+  opacity: 0.5;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
+
 .slide {
-    opacity: 0;
-    transition-duration: 1s ease;
-  }
-  
-  .slide.active {
-    opacity: 1;
-    transition-duration: .5s;
-    /* transform: scale(1.08); */
-  }
-.carousel-content{
-    display: flex;
-    align-items: center;
-    position: relative;
-    border: 2px solid  gray;
-    max-width:  1000px;
-    height: 500px;
-}
-.carousel-slide{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.image{
-    width: 100%;
-    height: 100%;
-
+  opacity: 0;
+  -webkit-transition-duration: 1s ease;
+          transition-duration: 1s ease;
 }
 
-.icon-left{
-    position: absolute;
+.slide.active {
+  opacity: 1;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  /* transform: scale(1.08); */
 }
-.icon-right{
-    position: absolute;
-    right: 0;
+
+.carousel-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid gray;
+  max-width: 1000px;
+  height: 500px;
 }
+
+.carousel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 0;
+}
+
+.carousel-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.icon-left {
+  position: absolute;
+}
+
+.icon-right {
+  position: absolute;
+  right: 0;
+}
+
 .carousel-content i {
-    font-size:3rem ;
-    z-index: 1;
-    color: aqua;
+  font-size: 3rem;
+  z-index: 1;
+  color: aqua;
 }
+/*# sourceMappingURL=carousel.css.map */
