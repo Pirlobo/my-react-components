@@ -1,6 +1,6 @@
 import types from "../util/ActionTypes";
 
-const { SET_NUMBER_CUSTOMER, CANCEL } = types;
+const { SET_NUMBER_CUSTOMER } = types;
 
 const initialState = {
   counter: {
@@ -18,11 +18,6 @@ const errorReducer = (state = initialState, action) => {
         ...state,
         counter: action.payload,
       };
-    case CANCEL:
-        return {
-          ...state
-        };
-
     default:
       return state;
   }

@@ -10,7 +10,7 @@ const state = useSelector((state) => state.counter.counter)
     infantsInSeat: state['infantsInSeat'],
     infantsOnLap: state['infantsOnLap'],
   });
-  const { SET_NUMBER_CUSTOMER, CANCEL } = types
+  const { SET_NUMBER_CUSTOMER } = types
   const dispatch = useDispatch()
 
   const handleAdultsIncrement = (e) => {
@@ -56,9 +56,6 @@ const state = useSelector((state) => state.counter.counter)
   }
 
   const handleOnCancel = (e) => {
-    dispatch({
-        type: CANCEL,
-    })
     props.handleOnClick()
   }
 
