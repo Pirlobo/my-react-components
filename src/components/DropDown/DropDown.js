@@ -19,7 +19,7 @@ const DropDown = () => {
 
   return (
     <>
-      <button onClick={handleOnClick} className={"flight_dropdown_container "}>
+      <button onClick={handleOnClick} className={"flight_dropdown_container " + (isClicked ? "btn_focus" : null)}>
         <svg
           width="20"
           height="20"
