@@ -67,8 +67,8 @@ const state = useSelector((state) => state.counter.counter)
             <div>Adults</div>
           </div>
           <div className="right">
-            <button onClick={handleAdultsDecrement} id="minus">
-              <i class="fas fa-minus"></i>
+            <button onClick={handleAdultsDecrement} id={(counter.adults > 1 ? "plus" : "minus")}>
+              <i class={"fas fa-minus " + (counter.adults > 1 ? "second-color-fa-minus" : null) }></i>
             </button>
             <span>{counter.adults}</span>
             <button onClick={handleAdultsIncrement} id="plus">
@@ -83,8 +83,8 @@ const state = useSelector((state) => state.counter.counter)
             <span>Aged 2 - 12</span>
           </div>
           <div className="right">
-            <button  onClick={handleChildrentDecrement} id="minus">
-              <i class="fas fa-minus"></i>
+            <button  onClick={handleChildrentDecrement} id={(counter.childrent > 0 ? "plus" : "minus")}>
+            <i class={"fas fa-minus " + (counter.childrent > 0 ? "second-color-fa-minus" : null) }></i>
             </button>
             <span>{counter.childrent}</span>
             <button onClick={handleChildrentIncrement} id="plus">
@@ -98,8 +98,8 @@ const state = useSelector((state) => state.counter.counter)
             <span>In seat</span>
           </div>
           <div className="right">
-            <button onClick={handleInfantsInSeatDecrement} id="minus">
-              <i class="fas fa-minus"></i>
+            <button onClick={handleInfantsInSeatDecrement} id={(counter.infantsInSeat > 0 ? "plus" : "minus")}>
+            <i class={"fas fa-minus " + (counter.infantsInSeat > 0 ? "second-color-fa-minus" : null) }></i>
             </button>
             <span>{counter.infantsInSeat}</span>
             <button onClick={handleInfantsInSeatIncrement} id="plus">
@@ -113,8 +113,8 @@ const state = useSelector((state) => state.counter.counter)
             <span>On lap</span>
           </div>
           <div className="right">
-            <button onClick={handleInfantsOnLapDecrement} id="minus">
-              <i class="fas fa-minus"></i>
+            <button onClick={handleInfantsOnLapDecrement} id={(counter.infantsOnLap > 0 ? "plus" : "minus")}>
+            <i class={"fas fa-minus " + (counter.infantsOnLap > 0 ? "second-color-fa-minus" : null) }></i>
             </button>
             <span>{counter.infantsOnLap}</span>
             <button onClick={handleInfantsOnLapIncrement}  id="plus">

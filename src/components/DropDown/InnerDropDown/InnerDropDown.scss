@@ -65,6 +65,9 @@
             i.fa-minus {
                 color: $text-color;
             }
+            i.fa-minus.second-color-fa-minus {
+                color: $dropdown-btn-color;
+            }
             i.fa-plus {
              color: $dropdown-btn-color;
          }
