@@ -1,0 +1,4 @@
+export default {
+    SET_NUMBER_CUSTOMER : "SET_NUMBER_CUSTOMER",
+    CANCEL : "CANCEL"
+}
