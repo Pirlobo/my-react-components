@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./InnerDropDown.scss";
 import { useDispatch, useSelector } from "react-redux"
 import types from "../../../util/ActionTypes"
+import ClickAwayListener from 'react-click-away-listener';
 const InnerDropDown = (props) => {
 const state = useSelector((state) => state.counter.counter)
   const [counter, setCounter] = useState({
@@ -60,7 +61,8 @@ const state = useSelector((state) => state.counter.counter)
   }
 
   return (
-    <div className="inner_drop_down_container">
+    <ClickAwayListener onClickAway={props.handleOnClick}>
+     <div className="inner_drop_down_container">
       <ul className="ul-container">
         <li id="adult">
           <div className="left">
@@ -128,6 +130,8 @@ const state = useSelector((state) => state.counter.counter)
         <button onClick={handleSubmit}>Finish</button>
       </div>
     </div>
+    </ClickAwayListener>
+   
   );
 };
 

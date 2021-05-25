@@ -1,3 +1,4 @@
 export default {
+    SET_ROUND_TRIP : "SET_ROUND_TRIP",
     SET_NUMBER_CUSTOMER : "SET_NUMBER_CUSTOMER",
 }

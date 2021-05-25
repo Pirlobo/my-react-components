@@ -1,0 +1,36 @@
+.round_trip_container {
+  border-style: none;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 8rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.round_trip_container span {
+  font: 14px/20px Roboto, Arial, sans-serif;
+  color: #686363;
+}
+
+.round_trip_container svg {
+  fill: #686363;
+}
+
+.round_trip_container:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+/*# sourceMappingURL=RoundTrip.css.map */

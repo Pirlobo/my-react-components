@@ -8,3 +8,13 @@
   border-style: none;
   background: white;
 }
+@mixin arrowUpTransition {
+  transition: all 0.2s ease;
+  transform: rotate(180deg);
+}
+@mixin btnFocus {
+  // border: 2px solid $border-outline-color;
+  background-color: whitesmoke;
+  fill: $primary-color;
+  color: $primary-color;
+}

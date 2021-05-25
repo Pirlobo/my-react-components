@@ -1,0 +1,38 @@
+@import "../style/mixin";
+@import "../style/variables";
+
+.round_trip_container{
+    @include borderNone();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:8rem;
+    height: $btn-height;
+    background-color: transparent;
+    border-radius: 4px;
+    span {
+        font: 14px/20px Roboto, Arial, sans-serif;
+        color: $text-color;
+    }
+    svg {
+        fill: $text-color;
+    }
+}
+.round_trip_container:hover{
+    cursor: pointer;
+    background-color: $hover-btn-background;
+}
+
+button.round_trip_container#focus{
+    svg {
+        fill: $primary-color;
+    }
+    span {
+        color: $primary-color;
+    }
+    background: $hovered-background-color;
+}
+
+
+

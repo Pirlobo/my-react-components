@@ -3,27 +3,24 @@
 .flight_dropdown_container{
     fill: $text-color;
     width: 5rem;
-    height: 2.5rem;
+    height: $btn-height;
     @include flexCenter(row);
     color: $text-color;
     border-radius: 4px;
     @include borderNone();
     svg#arrow_up {
-        transition: all .2s ease;
-        transform: rotate(180deg)
+        @include arrowUpTransition();
     }
 }
 
 .flight_dropdown_container:hover{
-    background-color: whitesmoke;
+    background-color: $hover-btn-background;
 }
 .btn_focus{
     // outline-width: 2px;
     // outline-style: solid;
     // outline-color: $text-color;
-    background-color: whitesmoke;
-    fill: $primary-color;
-    color: $primary-color;
+    @include btnFocus()
 }
 .flight_dropdown_container span {
 padding-left: 8px;

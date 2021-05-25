@@ -4,24 +4,20 @@
     @include flexCenter(column);
     width: 20rem;
     height: 19.5rem;
-    padding:10px;
+    padding: 0px 1rem;
     z-index: 2;
-    box-shadow: 2px 2px 2px 2px whitesmoke;
+    box-shadow: $box-shadow;
 }
 .ul-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
     list-style: none;
     margin: 0;
     padding: 16px 16px 0;
     font: 16px/24px Roboto,Arial,sans-serif;
     letter-spacing: .1px;
-    color: #5f6368;
+    color: $li-color;
     li#adult, li#childrent, li#infant_in_seat {
-        padding-bottom: .8rem;
+        padding-bottom: 1rem;
     }
     li {
         width: 100%;
@@ -84,7 +80,6 @@ ul {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 1rem;
 }
 .operations button {
     width: fit-content;

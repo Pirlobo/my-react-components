@@ -14,25 +14,13 @@
           align-items: center;
   width: 20rem;
   height: 19.5rem;
-  padding: 10px;
+  padding: 0px 1rem;
   z-index: 2;
   -webkit-box-shadow: 2px 2px 2px 2px whitesmoke;
           box-shadow: 2px 2px 2px 2px whitesmoke;
 }
 
 .ul-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
   list-style: none;
   margin: 0;
@@ -43,12 +31,11 @@
 }
 
 .ul-container li#adult, .ul-container li#childrent, .ul-container li#infant_in_seat {
-  padding-bottom: 20px;
+  padding-bottom: 1rem;
 }
 
 .ul-container li {
   width: 100%;
-  height: 2.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,8 +82,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -146,6 +134,10 @@
   color: #686363;
 }
 
+.ul-container li .right i.fa-minus.second-color-fa-minus {
+  color: #0fa9eb;
+}
+
 .ul-container li .right i.fa-plus {
   color: #0fa9eb;
 }
@@ -170,7 +162,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 1rem;
 }
 
 .operations button {
