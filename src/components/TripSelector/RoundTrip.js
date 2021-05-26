@@ -9,7 +9,11 @@ const RoundTrip = () => {
   const [isClicked, setIsClicked] = useState(false);
   const handleOnClick = (e) => {
     setIsClicked(!isClicked);
-    refContainer.current.id = "focus";
+    refContainer.current.id = "focusWithoutBorder";
+  };
+  const handleClickOnLinks = (e) => {
+    setIsClicked(!isClicked);
+    refContainer.current.id = "focusWithBorder";
   };
   const handleClickAway = (e) => {
     setIsClicked(!isClicked);
@@ -18,35 +22,16 @@ const RoundTrip = () => {
   const removeId = (e) => {
     refContainer.current.id = "";
   };
-
-  const conditionalIcon = (e) => {
-    if (state == "RoundTrip") {
-      return (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          focusable="false"
-          class=" NMm5M hhikbc"
+  return (
+      <ClickAwayListener onClickAway={removeId}>
+       <div>
+       <button
+          ref={refContainer}
+          onClick={handleOnClick}
+          id=""
+          className="round_trip_container"
         >
-          <path d="M22 8l-4-4v3H3v2h15v3l4-4zM2 16l4 4v-3h15v-2H6v-3l-4 4z"></path>
-        </svg>
-      );
-    } else if (state == "OneWay") {
-      return (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          focusable="false"
-          class=" NMm5M hhikbc"
-        >
-          <path d="M16.79 7.79l-1.41 1.42L17.17 11H3v2h14.17l-1.79 1.79 1.41 1.42L21 12z"></path>
-        </svg>
-      );
-    } else if (state == "MutiCity") {
-      return (
-        <svg
+          <svg
           enable-background="new 0 0 24 24"
           height="20"
           viewBox="0 0 24 24"
@@ -59,21 +44,9 @@ const RoundTrip = () => {
             <rect fill="none" height="24" width="24"></rect>
           </g>
         </svg>
-      );
-    }
-  };
-  return (
-    <>
-      <ClickAwayListener onClickAway={removeId}>
-        <button
-          ref={refContainer}
-          onClick={handleOnClick}
-          id=""
-          className="round_trip_container"
-        >
-          {conditionalIcon()}
           <span>{state}</span>
           <svg
+          id = {isClicked ? "arrow_up" : null}
             width="18"
             height="18"
             viewBox="0 0 24 24"
@@ -83,15 +56,14 @@ const RoundTrip = () => {
             <path d="M7 10l5 5 5-5H7z"></path>
           </svg>
         </button>
-      </ClickAwayListener>
-
-      {isClicked ? (
+        {isClicked ? (
         <InnerRoundTrip
-          handleOnClick={handleOnClick}
+        handleClickOnLinks = {handleClickOnLinks}
           handleClickAway={handleClickAway}
         ></InnerRoundTrip>
       ) : null}
-    </>
+       </div>
+      </ClickAwayListener>
   );
 };
 

@@ -1,11 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./dropDown.scss";
 import InnerDropDown from "./InnerDropDown/InnerDropDown";
 import { useSelector } from "react-redux";
+import ClickAwayListener from "react-click-away-listener";
 const DropDown = () => {
+  const refContainer = useRef(null)
   const [isClicked, setIsClicked] = useState(false);
   const handleOnClick = (e) => {
     setIsClicked(!isClicked);
+    refContainer.current.id = "focusWithoutBorder";
+  };
+  const handleClickOnLinks = (e) => {
+    setIsClicked(!isClicked);
+    refContainer.current.id = "focusWithBorder";
+  }
+  const handleClickAway = (e) => {
+    setIsClicked(!isClicked);
+    refContainer.current.id = "";
+  };
+  const removeId = (e) => {
+    refContainer.current.id = "";
   };
   const [totalCustomer, setTotalCustomer] = useState(0);
   const state = useSelector((state) => state.counter.counter);
@@ -18,8 +32,9 @@ const DropDown = () => {
   }, [state]);
 
   return (
-      <>
-      <button onClick={handleOnClick} className={"flight_dropdown_container " + (isClicked ? "btn_focus" : null)}>
+    <ClickAwayListener onClickAway = {removeId}>
+    <div>
+      <button ref={refContainer} onClick={handleOnClick} className={"flight_dropdown_container " + (isClicked ? "btn_focus" : null)}>
         <svg
           width="20"
           height="20"
@@ -42,8 +57,12 @@ const DropDown = () => {
           <path d="M7 10l5 5 5-5H7z"></path>
         </svg>
       </button>
-      {isClicked ? <InnerDropDown handleOnClick = {handleOnClick}></InnerDropDown> : null}
-      </>
+      {isClicked ? <InnerDropDown
+      handleClickOnLinks = {handleClickOnLinks}
+          handleClickAway={handleClickAway}
+      ></InnerDropDown> : null}
+        </div>
+      </ClickAwayListener>
   );
 };
 

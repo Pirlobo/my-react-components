@@ -1,0 +1,48 @@
+@import "../../style/mixin";
+@import "../../style/variables";
+
+.inner_class_selector_container {
+  position: relative;
+  width: 14rem;
+  height: 12rem;
+  box-shadow: $box-shadow;
+  @include flexCenter(column);
+  border-radius: 4px;
+  ul.ul_container {
+    letter-spacing: 0.1px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    list-style: none;
+    font: 16px/24px Roboto, Arial, sans-serif;
+    color: $li-color;
+    li {
+      margin: -1px 1px;
+      @include flexCenter(row);
+      height: 3rem;
+      padding: 0 .5rem;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      grid-template-rows: 1;
+      #left {
+          svg {
+            float: right;
+          }
+    }
+      #right {
+        margin-left: 1rem;
+      }
+    }
+    li.focused{
+        fill: $primary-color;
+        color: $primary-color;
+        background: $hovered-background-color;
+    }
+    li:hover{
+        cursor: pointer;
+    }
+    li.notFocused:hover {
+      background: $hover-btn-background;
+    }
+  }
+}

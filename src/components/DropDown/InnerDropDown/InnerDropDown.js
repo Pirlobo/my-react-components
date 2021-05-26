@@ -53,15 +53,15 @@ const state = useSelector((state) => state.counter.counter)
           type: SET_NUMBER_CUSTOMER,
           payload: counter 
       })
-      props.handleOnClick()
+      props.handleClickOnLinks()
   }
 
   const handleOnCancel = (e) => {
-    props.handleOnClick()
+    props.handleClickOnLinks()
   }
 
   return (
-    <ClickAwayListener onClickAway={props.handleOnClick}>
+    <ClickAwayListener onClickAway={props.handleClickAway}>
      <div className="inner_drop_down_container">
       <ul className="ul-container">
         <li id="adult">

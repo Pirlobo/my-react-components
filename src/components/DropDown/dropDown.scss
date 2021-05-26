@@ -1,29 +1,36 @@
 @import "../style/mixin";
 @import "../style/variables";
-.flight_dropdown_container{
-    fill: $text-color;
-    width: 5rem;
-    height: $btn-height;
-    @include flexCenter(row);
-    color: $text-color;
-    border-radius: 4px;
-    @include borderNone();
-    svg#arrow_up {
-        @include arrowUpTransition();
-    }
+.flight_dropdown_container {
+  fill: $text-color;
+  width: 5rem;
+  height: $btn-height;
+  @include flexCenter(row);
+  color: $text-color;
+  border-radius: 4px;
+  @include borderNone();
+  svg#arrow_up {
+    @include arrowUpTransition();
+  }
 }
 
-.flight_dropdown_container:hover{
-    background-color: $hover-btn-background;
+.flight_dropdown_container:hover {
+  background-color: $hover-btn-background;
 }
-.btn_focus{
-    // outline-width: 2px;
-    // outline-style: solid;
-    // outline-color: $text-color;
-    @include btnFocus()
-}
+
+// outline-width: 2px;
+// outline-style: solid;
+// outline-color: $text-color;
+
 .flight_dropdown_container span {
-padding-left: 8px;
-padding-right: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+button.flight_dropdown_container#focusWithoutBorder {
+  @include btnWithFocusId();
+  background: $hover-btn-background;
 }
 
+button.flight_dropdown_container#focusWithBorder {
+  border: 2px solid gray;
+  @include btnWithFocusId();
+}

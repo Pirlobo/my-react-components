@@ -12,23 +12,23 @@ const InnerRoundTrip = (props) => {
   const handleRoundTripLinkOnClick = (e) => {
     dispatch({
         type: SET_ROUND_TRIP,
-        payload: "RoundTrip"
+        payload: "Round Trip"
     })
-    props.handleOnClick()
+    props.handleClickOnLinks()
   };
   const handleOneWayLinkOnClick = (e) => {
     dispatch({
         type: SET_ROUND_TRIP,
         payload: "OneWay"
     })
-    props.handleOnClick()
+    props.handleClickOnLinks()
   };
   const handleMutiCityLinkOnClick = (e) => {
     dispatch({
         type: SET_ROUND_TRIP,
-        payload: "MutiCity"
+        payload: "Muti-City"
     })
-    props.handleOnClick()
+    props.handleClickOnLinks()
   };
   return (
     <ClickAwayListener onClickAway={props.handleClickAway}>
@@ -36,11 +36,11 @@ const InnerRoundTrip = (props) => {
         <ul className="ul_container">
           <li
             onClick={handleRoundTripLinkOnClick}
-            className={roundTrip == "RoundTrip" ? "focused" : "notFocused"}
+            className={roundTrip == "Round Trip" ? "focused" : "notFocused"}
             id="round-trip"
           >
             <div id="left">
-            {roundTrip == "RoundTrip" ? <svg
+            {roundTrip == "Round Trip" ? <svg
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -77,12 +77,12 @@ const InnerRoundTrip = (props) => {
             </div>
           </li>
           <li
-            className={roundTrip == "MutiCity" ? "focused" : "notFocused"}
+            className={roundTrip == "Muti-City" ? "focused" : "notFocused"}
             onClick={handleMutiCityLinkOnClick}
             id="muti-city"
           >
             <div id="left">
-            {roundTrip == "MutiCity" ? <svg
+            {roundTrip == "Muti-City" ? <svg
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"

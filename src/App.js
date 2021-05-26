@@ -7,7 +7,8 @@ import Dropdown from "./components/Dropdown/DropDown";
 import { Provider } from "react-redux";
 import Helmet from "react-helmet";
 import store from './store'
-import RoundTrip from "./components/RoundTrip/RoundTrip"
+import TripSelector from "./components/TripSelector/RoundTrip"
+import ClassSelector from "./components/ClassSelector/ClassSelector"
 function App() {
   // Carousel's props
   let images = imageList;
@@ -23,8 +24,11 @@ function App() {
       </Helmet>
       {/* <Carousel imageList= {images}></Carousel>
      <HoverDropdown title={title} options={options}></HoverDropdown>
-      <Dropdown></Dropdown> */}
-      <RoundTrip></RoundTrip>
+      <HoverDropdown></HoverDropdown> */}
+  
+      {/* <Dropdown></Dropdown>  */}
+      <ClassSelector></ClassSelector>
+      {/* <TripSelector></TripSelector> */}
     </Provider>
   );
 }

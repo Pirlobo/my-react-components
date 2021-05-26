@@ -7,13 +7,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width:8rem;
+    width:fit-content;
     height: $btn-height;
     background-color: transparent;
     border-radius: 4px;
+    svg#arrow_up {
+        @include arrowUpTransition();
+      }
     span {
         font: 14px/20px Roboto, Arial, sans-serif;
         color: $text-color;
+        padding: 0 .5rem;
     }
     svg {
         fill: $text-color;
@@ -24,14 +28,14 @@
     background-color: $hover-btn-background;
 }
 
-button.round_trip_container#focus{
-    svg {
-        fill: $primary-color;
-    }
-    span {
-        color: $primary-color;
-    }
-    background: $hovered-background-color;
+button.round_trip_container#focusWithoutBorder{
+    @include btnWithFocusId();
+    background: $hover-btn-background;
+}
+
+button.round_trip_container#focusWithBorder{
+    border: 2px solid gray;
+    @include btnWithFocusId();
 }
 
 

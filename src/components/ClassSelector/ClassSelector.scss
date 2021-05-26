@@ -1,0 +1,43 @@
+@import "../style/mixin";
+@import "../style/variables";
+
+.class_selector_container{
+    @include borderNone();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:fit-content;
+    height: $btn-height;
+    background-color: transparent;
+    border-radius: 4px;
+    svg#arrow_up {
+        @include arrowUpTransition();
+      }
+    span {
+        font: 1rem Roboto, Arial, sans-serif;
+        color: $text-color;
+        padding: 0 .5rem;
+    }
+    svg {
+        fill: $text-color;
+    }
+}
+.class_selector_container:hover{
+    cursor: pointer;
+    background-color: $hover-btn-background;
+}
+
+button.class_selector_container#focusWithoutBorder{
+    @include btnWithFocusId();
+    background: $hover-btn-background;
+}
+
+button.class_selector_container#focusWithBorder{
+    border: 2px solid gray;
+    @include btnWithFocusId();
+}
+
+
+
+

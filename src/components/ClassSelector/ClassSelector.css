@@ -1,0 +1,70 @@
+.class_selector_container {
+  border-style: none;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2.5rem;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.class_selector_container svg#arrow_up {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.class_selector_container span {
+  font: 1rem Roboto, Arial, sans-serif;
+  color: #686363;
+  padding: 0 .5rem;
+}
+
+.class_selector_container svg {
+  fill: #686363;
+}
+
+.class_selector_container:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+button.class_selector_container#focusWithoutBorder {
+  background: whitesmoke;
+}
+
+button.class_selector_container#focusWithoutBorder svg {
+  fill: #0d64e7;
+}
+
+button.class_selector_container#focusWithoutBorder span {
+  color: #0d64e7;
+}
+
+button.class_selector_container#focusWithBorder {
+  border: 2px solid gray;
+}
+
+button.class_selector_container#focusWithBorder svg {
+  fill: #0d64e7;
+}
+
+button.class_selector_container#focusWithBorder span {
+  color: #0d64e7;
+}
+/*# sourceMappingURL=ClassSelector.css.map */

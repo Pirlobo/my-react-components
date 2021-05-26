@@ -3,7 +3,7 @@ import types from "../util/ActionTypes";
 const { SET_ROUND_TRIP } = types;
 
 const initialState = {
-    roundTrip : "RoundTrip"
+    roundTrip : "Round Trip"
 };
 
 const roundTripReducer = (state = initialState, action) => {

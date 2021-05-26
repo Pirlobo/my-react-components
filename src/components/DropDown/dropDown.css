@@ -22,8 +22,8 @@
 }
 
 .flight_dropdown_container svg#arrow_up {
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -32,15 +32,32 @@
   background-color: whitesmoke;
 }
 
-.btn_focus {
-  border: 2px solid gray;
-  background-color: whitesmoke;
-  fill: #0d64e7;
-  color: #0d64e7;
-}
-
 .flight_dropdown_container span {
   padding-left: 8px;
   padding-right: 8px;
+}
+
+button.flight_dropdown_container#focusWithoutBorder {
+  background: whitesmoke;
+}
+
+button.flight_dropdown_container#focusWithoutBorder svg {
+  fill: #0d64e7;
+}
+
+button.flight_dropdown_container#focusWithoutBorder span {
+  color: #0d64e7;
+}
+
+button.flight_dropdown_container#focusWithBorder {
+  border: 2px solid gray;
+}
+
+button.flight_dropdown_container#focusWithBorder svg {
+  fill: #0d64e7;
+}
+
+button.flight_dropdown_container#focusWithBorder span {
+  color: #0d64e7;
 }
 /*# sourceMappingURL=dropDown.css.map */
