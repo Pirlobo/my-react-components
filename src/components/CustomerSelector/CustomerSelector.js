@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./dropDown.scss";
+import "./customerSelector.scss";
 import InnerDropDown from "./InnerDropDown/InnerDropDown";
 import { useSelector } from "react-redux";
 import ClickAwayListener from "react-click-away-listener";

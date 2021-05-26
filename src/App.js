@@ -3,7 +3,7 @@ import HoverDropdown from "./components/Hover-DropDown/DropDown";
 import Carousel from "./components/Carousel/Carousel";
 import { imageList } from "./props/CarouselProps";
 import { Title, Options } from "./props/DropDownProps";
-import Dropdown from "./components/Dropdown/DropDown";
+import CustomerSelector from "./components/CustomerSelector/CustomerSelector";
 import { Provider } from "react-redux";
 import Helmet from "react-helmet";
 import store from './store'
@@ -26,8 +26,8 @@ function App() {
      <HoverDropdown title={title} options={options}></HoverDropdown>
       <HoverDropdown></HoverDropdown> */}
   
-      {/* <Dropdown></Dropdown>  */}
-      <ClassSelector></ClassSelector>
+      <CustomerSelector></CustomerSelector>
+      {/* <ClassSelector></ClassSelector> */}
       {/* <TripSelector></TripSelector> */}
     </Provider>
   );
