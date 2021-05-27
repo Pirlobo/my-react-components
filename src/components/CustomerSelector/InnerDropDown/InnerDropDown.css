@@ -16,8 +16,8 @@
   height: 19.5rem;
   padding: 0px 1rem;
   z-index: 2;
-  -webkit-box-shadow: 2px 2px 2px 2px whitesmoke;
-          box-shadow: 2px 2px 2px 2px whitesmoke;
+  -webkit-box-shadow: 0px 0px 2px 2px whitesmoke;
+          box-shadow: 0px 0px 2px 2px whitesmoke;
 }
 
 .ul-container {
@@ -25,7 +25,7 @@
   list-style: none;
   margin: 0;
   padding: 16px 16px 0;
-  font: 16px/24px Roboto,Arial,sans-serif;
+  font: 16px/24px Roboto, Arial, sans-serif;
   letter-spacing: .1px;
   color: #5f6368;
 }

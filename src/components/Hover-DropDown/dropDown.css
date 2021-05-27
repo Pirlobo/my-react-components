@@ -34,12 +34,12 @@
   outline: none;
   color: white;
   padding: 20px;
-  background-color: #03b1fc;
+  background-color: #0fa9eb;
   font-family: inherit;
 }
 
 .dropdown-content a:hover {
-  color: #03b1fc;
+  color: #0fa9eb;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }

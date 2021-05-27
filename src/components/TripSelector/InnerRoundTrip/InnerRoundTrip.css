@@ -2,8 +2,8 @@
   position: relative;
   width: 10.5rem;
   height: 9rem;
-  -webkit-box-shadow: 2px 2px 2px 2px whitesmoke;
-          box-shadow: 2px 2px 2px 2px whitesmoke;
+  -webkit-box-shadow: 0px 0px 2px 2px whitesmoke;
+          box-shadow: 0px 0px 2px 2px whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,6 +31,7 @@
 }
 
 .inner_round_trip_container ul.ul_container li {
+  margin: -1px 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -9,6 +9,7 @@ import Helmet from "react-helmet";
 import store from './store'
 import TripSelector from "./components/TripSelector/RoundTrip"
 import ClassSelector from "./components/ClassSelector/ClassSelector"
+import WhereFromSelector from "./components/WhereSelector/WhereFromSelector/WhereFromSelector"
 function App() {
   // Carousel's props
   let images = imageList;
@@ -26,9 +27,10 @@ function App() {
      <HoverDropdown title={title} options={options}></HoverDropdown>
       <HoverDropdown></HoverDropdown> */}
   
-      <CustomerSelector></CustomerSelector>
+      {/* <CustomerSelector></CustomerSelector> */}
       {/* <ClassSelector></ClassSelector> */}
       {/* <TripSelector></TripSelector> */}
+      <WhereFromSelector></WhereFromSelector>
     </Provider>
   );
 }
