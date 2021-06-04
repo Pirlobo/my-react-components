@@ -1,6 +1,9 @@
 @import "../style/mixin";
 @import "../style/variables";
 
+.container{
+    margin-top: -6rem;
+}
 .main__container{
     position: relative;
     padding: 10px 1rem;

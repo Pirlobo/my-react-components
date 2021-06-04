@@ -7,7 +7,9 @@ import WhereToSelector from "../WhereSelector/WhereToSelector/WhereToSelector"
 const FlightBooking = () => {
   return (
     <div>
-      <h1 style={{textAlign : "center", fontSize : "3rem", fontWeight : "lighter", marginBottom : "2rem"}}>Google Flights</h1>
+        <img class="rYD0Re" src="https://www.gstatic.com/travel-frontend/animation/hero/flights_3.svg" alt="" aria-hidden="true" data-atf="true" />
+     <div class="container">
+     <h1 style={{textAlign : "center", fontSize : "3rem", fontWeight : "lighter", marginBottom : "2rem"}}>Google Flights</h1>
     <div className="main__container">
       <div className="top__selector">
         <TripSelector></TripSelector>
@@ -25,6 +27,7 @@ const FlightBooking = () => {
       </button>
       </div>
     </div>
+     </div>
     </div>
   );
 };
