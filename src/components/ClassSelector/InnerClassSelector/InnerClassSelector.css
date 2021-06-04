@@ -2,8 +2,8 @@
   position: relative;
   width: 14rem;
   height: 12rem;
-  -webkit-box-shadow: 0px 0px 10px 2px #e4e1e1;
-          box-shadow: 0px 0px 10px 2px #e4e1e1;
+  -webkit-box-shadow: 0px 0px 2px 1px #e4e1e1;
+          box-shadow: 0px 0px 2px 1px #e4e1e1;
   background: white;
   z-index: 3;
   display: -webkit-box;

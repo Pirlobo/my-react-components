@@ -1,7 +1,7 @@
 @import "../../style/mixin";
 @import "../../style/variables";
 
-.where_from_selector_input {
+.where_to_selector_input {
   padding-left: 1rem;
   font: $font;
   outline: 0 none;
@@ -10,7 +10,7 @@
   z-index: 2;
   width: 100%;
 }
-.clicked_where_from_selector_input{
+.clicked_where_to_selector_input{
   width: 20rem;
   border-radius: 4px;
   padding-left: 1rem;
@@ -20,7 +20,7 @@
   color: $text-color;
   z-index: 2;
 }
-.where_from_selector_container {
+.where_to_selector_container {
   box-shadow: $box-shadow;
   position: relative;
   display: flex;
@@ -35,7 +35,7 @@
     padding-left: 1.25rem;
   }
 }
-.where_from_selector_container.short:hover {
+.where_to_selector_container.short:hover {
   border: 1px solid rgb(173, 167, 167);
 }
 .short {
@@ -54,7 +54,7 @@
   z-index: 2;
 }
 .plus__icon__button:hover {
-  background: rgb(255, 253, 253);
+    background: rgb(255, 253, 253);
   box-shadow: $box-shadow;
 }
 .outer_container {

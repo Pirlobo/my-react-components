@@ -1,4 +1,4 @@
-.where_from_selector_input {
+.where_to_selector_input {
   padding-left: 1rem;
   font: 16px/24px Roboto, Arial, sans-serif;
   outline: 0 none;
@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-.clicked_where_from_selector_input {
+.clicked_where_to_selector_input {
   width: 20rem;
   border-radius: 4px;
   padding-left: 1rem;
@@ -19,7 +19,7 @@
   z-index: 2;
 }
 
-.where_from_selector_container {
+.where_to_selector_container {
   -webkit-box-shadow: 0px 0px 2px 1px #e4e1e1;
           box-shadow: 0px 0px 2px 1px #e4e1e1;
   position: relative;
@@ -37,12 +37,12 @@
   border: 1px solid #ddd8d8;
 }
 
-.where_from_selector_container svg {
+.where_to_selector_container svg {
   fill: #686363;
   padding-left: 1.25rem;
 }
 
-.where_from_selector_container.short:hover {
+.where_to_selector_container.short:hover {
   border: 1px solid #ada7a7;
 }
 
@@ -100,4 +100,4 @@
           transform: scale(1.2);
   color: #525151;
 }
-/*# sourceMappingURL=whereFromSelector.css.map */
+/*# sourceMappingURL=whereToSelector.css.map */

@@ -2,6 +2,7 @@ import React from "react";
 import "./flightBooking.scss";
 import TripSelector from "../TripSelector/RoundTrip";
 import WhereFromSelector from "../WhereSelector/WhereFromSelector/WhereFromSelector"
+import WhereToSelector from "../WhereSelector/WhereToSelector/WhereToSelector"
 
 const FlightBooking = () => {
   return (
@@ -13,6 +14,9 @@ const FlightBooking = () => {
       </div>
       <div className="bottom_selector">
         <WhereFromSelector></WhereFromSelector>
+        <div style = {{marginLeft : ".5rem"}}>
+        <WhereToSelector></WhereToSelector>
+        </div>
       </div>
       <div className="center__btn">
       <button className="search__btn">

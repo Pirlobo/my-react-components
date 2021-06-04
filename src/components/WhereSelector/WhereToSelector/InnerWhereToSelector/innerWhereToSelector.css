@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-.inner_where_from_selector_container {
+.inner_where_to_selector_container {
   position: absolute;
   top: 0;
   width: 28rem;
@@ -67,4 +67,4 @@
   -webkit-box-shadow: 0px 0px 0px 1px #e4e1e1;
           box-shadow: 0px 0px 0px 1px #e4e1e1;
 }
-/*# sourceMappingURL=innerWhereFromSelector.css.map */
+/*# sourceMappingURL=innerWhereToSelector.css.map */

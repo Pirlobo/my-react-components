@@ -16,8 +16,8 @@
   width: 20rem;
   height: 19.5rem;
   padding: 0px 1rem;
-  -webkit-box-shadow: 0px 0px 10px 2px #e4e1e1;
-          box-shadow: 0px 0px 10px 2px #e4e1e1;
+  -webkit-box-shadow: 0px 0px 2px 1px #e4e1e1;
+          box-shadow: 0px 0px 2px 1px #e4e1e1;
   background: white;
   z-index: 3;
 }
