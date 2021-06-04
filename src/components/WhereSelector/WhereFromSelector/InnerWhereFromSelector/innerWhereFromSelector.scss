@@ -9,6 +9,8 @@
     height:10rem;
     box-shadow: $box-shadow;
     border-radius: 4px;
+    background: white;
+    z-index: 3;
 }
 .inner_content {
     margin-top: 3.2rem;

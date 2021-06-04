@@ -2,8 +2,10 @@
   position: relative;
   width: 10.5rem;
   height: 9rem;
-  -webkit-box-shadow: 0px 0px 2px 2px whitesmoke;
-          box-shadow: 0px 0px 2px 2px whitesmoke;
+  z-index: 3;
+  background: white;
+  -webkit-box-shadow: 0px 0px 10px 2px #e4e1e1;
+          box-shadow: 0px 0px 10px 2px #e4e1e1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,8 +65,8 @@
 }
 
 .inner_round_trip_container ul.ul_container li.focused {
-  fill: #0d64e7;
-  color: #0d64e7;
+  fill: #1c77ff;
+  color: #1c77ff;
   background: #bfebff;
 }
 

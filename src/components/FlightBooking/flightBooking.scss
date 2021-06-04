@@ -1,0 +1,55 @@
+@import "../style/mixin";
+@import "../style/variables";
+
+.main__container{
+    position: relative;
+    padding: 10px 1rem;
+    margin: auto;
+    box-shadow: $box-shadow;
+    width: 61rem;
+    height: 8.75rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: white;
+    .top__selector {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .bottom_selector{
+        position: absolute;
+        top: 3rem;
+        margin-top: .5rem;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .center__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .search__btn{
+            position: absolute;
+            bottom: -1.25rem;
+            width: 7rem;
+            color: white;
+            border-style: none;
+            border-radius: 50px;
+            height: 2.5rem;
+            background: $primary-color;
+            box-shadow: $box-shadow;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: .95rem;
+            svg {
+                padding-left: .2rem;
+                padding-right: .5rem;
+                float: left;
+                fill: white;
+            }
+        }
+    }
+}

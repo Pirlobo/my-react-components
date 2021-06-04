@@ -2,6 +2,7 @@
 @import "../style/variables";
 
 .class_selector_container{
+    position: relative;
     @include borderNone();
     display: flex;
     flex-direction: row;

@@ -34,3 +34,7 @@ button.flight_dropdown_container#focusWithBorder {
   border: 2px solid gray;
   @include btnWithFocusId();
 }
+.row {
+display: flex;
+flex-direction: row;
+}

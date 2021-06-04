@@ -2,11 +2,13 @@
 @import "../../style/variables";
 .inner_drop_down_container{
     @include flexCenter(column);
+    position: relative;
     width: 20rem;
     height: 19.5rem;
     padding: 0px 1rem;
-    z-index: 2;
     box-shadow: $box-shadow;
+    background: white;
+    z-index: 3;
 }
 .ul-container {
     width: 100%;

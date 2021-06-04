@@ -1,4 +1,5 @@
 .class_selector_container {
+  position: relative;
   border-style: none;
   background: white;
   display: -webkit-box;
@@ -49,11 +50,11 @@ button.class_selector_container#focusWithoutBorder {
 }
 
 button.class_selector_container#focusWithoutBorder svg {
-  fill: #0d64e7;
+  fill: #1c77ff;
 }
 
 button.class_selector_container#focusWithoutBorder span {
-  color: #0d64e7;
+  color: #1c77ff;
 }
 
 button.class_selector_container#focusWithBorder {
@@ -61,10 +62,10 @@ button.class_selector_container#focusWithBorder {
 }
 
 button.class_selector_container#focusWithBorder svg {
-  fill: #0d64e7;
+  fill: #1c77ff;
 }
 
 button.class_selector_container#focusWithBorder span {
-  color: #0d64e7;
+  color: #1c77ff;
 }
 /*# sourceMappingURL=ClassSelector.css.map */

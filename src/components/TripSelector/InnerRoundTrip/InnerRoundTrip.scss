@@ -5,6 +5,8 @@
   position: relative;
   width: 10.5rem;
   height: 9rem;
+  z-index: 3;
+  background: white;
   box-shadow: $box-shadow;
   @include flexCenter(column);
   border-radius: 4px;

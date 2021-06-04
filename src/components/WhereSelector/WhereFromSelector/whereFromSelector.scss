@@ -2,7 +2,7 @@
 @import "../../style/variables";
 
 .where_from_selector_input {
-  padding-left: 0.5rem;
+  padding-left: 1rem;
   font: $font;
   outline: 0 none;
   border: 1px solid white;
@@ -20,7 +20,7 @@
   border: 1px solid rgb(221, 216, 216);
   svg {
     fill: $text-color;
-    padding-left: 1rem;
+    padding-left: 1.25rem;
   }
 }
 .where_from_selector_container.short:hover {
@@ -55,6 +55,7 @@
   border-bottom-left-radius: 0;
   border-bottom: 1px solid rgb(224, 216, 216);
   width: 28rem;
+  z-index: 4;
 //   margin-left: 0.5rem;
   i#plus {
     transform: scale(1.2);

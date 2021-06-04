@@ -3,6 +3,7 @@ import "./RoundTrip.scss";
 import InnerRoundTrip from "./InnerRoundTrip/InnerRoundTrip";
 import { useSelector, useDispatch } from "react-redux";
 import ClickAwayListener from "react-click-away-listener";
+import CustomerSelector from "../CustomerSelector/CustomerSelector";
 const RoundTrip = () => {
   const refContainer = useRef(null);
   const state = useSelector((state) => state.roundTrip["roundTrip"]);
@@ -22,16 +23,10 @@ const RoundTrip = () => {
   const removeId = (e) => {
     refContainer.current.id = "";
   };
-  return (
-      <ClickAwayListener onClickAway={removeId}>
-       <div>
-       <button
-          ref={refContainer}
-          onClick={handleOnClick}
-          id=""
-          className="round_trip_container"
-        >
-          <svg
+  const renderSVG = (e) => {
+    if (state == "Muti-City") {
+      return (
+        <svg
           enable-background="new 0 0 24 24"
           height="20"
           viewBox="0 0 24 24"
@@ -44,26 +39,68 @@ const RoundTrip = () => {
             <rect fill="none" height="24" width="24"></rect>
           </g>
         </svg>
-          <span>{state}</span>
-          <svg
-          id = {isClicked ? "arrow_up" : null}
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            focusable="false"
-            class=" NMm5M"
+      );
+    } else if (state == "OneWay") {
+      return (
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          focusable="false"
+          class=" NMm5M hhikbc"
+        >
+          <path d="M16.79 7.79l-1.41 1.42L17.17 11H3v2h14.17l-1.79 1.79 1.41 1.42L21 12z"></path>
+        </svg>
+      );
+    } else if (state == "Round Trip") {
+      return (
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          focusable="false"
+          class=" NMm5M hhikbc"
+        >
+          <path d="M22 8l-4-4v3H3v2h15v3l4-4zM2 16l4 4v-3h15v-2H6v-3l-4 4z"></path>
+        </svg>
+      );
+    }
+  };
+  return (
+    <div>
+      <div className="row">
+        <ClickAwayListener onClickAway={removeId}>
+          <button
+            ref={refContainer}
+            onClick={handleOnClick}
+            id=""
+            className="round_trip_container"
           >
-            <path d="M7 10l5 5 5-5H7z"></path>
-          </svg>
-        </button>
-        {isClicked ? (
+            {renderSVG()}
+            <span>{state}</span>
+            <svg
+              id={isClicked ? "arrow_up" : null}
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              focusable="false"
+              class=" NMm5M"
+            >
+              <path d="M7 10l5 5 5-5H7z"></path>
+            </svg>
+          </button>
+        </ClickAwayListener>
+        <div className="margin__left">
+          <CustomerSelector></CustomerSelector>
+        </div>
+      </div>
+      {isClicked ? (
         <InnerRoundTrip
-        handleClickOnLinks = {handleClickOnLinks}
+          handleClickOnLinks={handleClickOnLinks}
           handleClickAway={handleClickAway}
         ></InnerRoundTrip>
       ) : null}
-       </div>
-      </ClickAwayListener>
+    </div>
   );
 };
 

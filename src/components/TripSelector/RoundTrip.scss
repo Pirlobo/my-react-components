@@ -37,6 +37,12 @@ button.round_trip_container#focusWithBorder{
     border: 2px solid gray;
     @include btnWithFocusId();
 }
-
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.margin__left{
+    margin-left: .2rem;
+}
 
 

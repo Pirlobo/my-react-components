@@ -1,5 +1,5 @@
 .where_from_selector_input {
-  padding-left: 0.5rem;
+  padding-left: 1rem;
   font: 16px/24px Roboto, Arial, sans-serif;
   outline: 0 none;
   border: 1px solid white;
@@ -28,7 +28,7 @@
 
 .where_from_selector_container svg {
   fill: #686363;
-  padding-left: 1rem;
+  padding-left: 1.25rem;
 }
 
 .where_from_selector_container.short:hover {
@@ -66,8 +66,8 @@
 
 .plus__icon__button:hover {
   background: snow;
-  -webkit-box-shadow: 0px 0px 2px 2px whitesmoke;
-          box-shadow: 0px 0px 2px 2px whitesmoke;
+  -webkit-box-shadow: 0px 0px 10px 2px #e4e1e1;
+          box-shadow: 0px 0px 10px 2px #e4e1e1;
 }
 
 .outer_container {
@@ -81,6 +81,7 @@
   border-bottom-left-radius: 0;
   border-bottom: 1px solid #e0d8d8;
   width: 28rem;
+  z-index: 4;
 }
 
 .long i#plus {
